@@ -4,9 +4,11 @@
     --primary-color: white;
     --secondary-color: #FF89FF;
 }
+
 body{
     background-image: linear-gradient(to right, blue, lightblue);
 }
+
 .parent{
     background-color: lightgray;
     margin-top: 10%;
@@ -14,31 +16,41 @@ body{
     margin-left: 20%;
     margin-right: 20%;
     font-size: 16px;
+    box-sizing: content-box;
 }
+
 .child1{
     background-color: white;
     color: purple;
     margin-left: 5%;
     margin-right: 5%;
 }
+
 .title{
     color: #FF8762;
     text-transform: uppercase;
 }
+
 .title::after{
     content: " after";
     color: #FF8762;
 }
+
 #first{
     color: rgb(120, 58, 230);
 }
+
 #first:hover{
-    color: rgb(120, 58, 230);
+    color: rgb(20, 158, 30);
     font-size: 30px;
 }
+
 #first::before{
     content: "Before ";
     color: rgb(120, 158, 230);
+}
+.paragraphs{
+    text-align: center;
 }
 p{
     color: #DD2387;
@@ -46,46 +58,58 @@ p{
     background-color: aqua;
     text-decoration: underline;
 }
+
 span{
     background-color: wheat;
     margin: 5%;
     color: black;
     text-transform: capitalize;
 }
+
 .druga{
     display: block;
     background-color: transparent;
     margin: 5%;
 }
-label{
-    display: inline-block;
-}
+
 .inputs{
     display: flex;
+    justify-content: center;
     margin-left: 5%;
+    margin-bottom: 3%;
     color: purple;
-    align-items: center;
 }
+
+label{
+    display: flex;
+    margin-top: 1%;
+}
+
+input{
+    margin-right: 10px;
+}
+
 input[type="text"]{
     background-color: lightblue;
     color: red;
 }
+
 .box-containers{
     display: flex;
-    margin-left: 10%;
+    justify-content: center;
 }
+
 .box{
     background-image: radial-gradient(ellipse, green, purple);
     color: var(--primary-color);
     width: 30%;
     border: 10px dashed palevioletred;
     margin: 15px;
-    padding-top: 3%;
     text-align: center;
-    box-sizing: content-box;
-    font-style: normal;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
+
 .box2{
     background-image: url("https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg");
     color: var(--secondary-color);
@@ -98,15 +122,17 @@ input[type="text"]{
     padding: 10px;
     box-sizing: content-box;
 }
+
 .images{
     display: flex;
-    margin-left: 10%;
+    justify-content: center;
     margin-bottom: 2%;
 }
+
 img{
     width: 20%;
     min-width: 200px;
-    margin-right: 2%;
+    margin-right: 5px;
 }
 .image{
     width: 70%;
